@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>SignIn-Hushed-Voices</title>
+</head>
+<body>
+    <section class="signin">
+        <img class="lock" src="{% static 'img/lock.png'%}" alt="">
+        <p class="hd">Hushed Voices <br> <span> <br> Sign In </span></p>
+        <div class="input">
+            <form method="post"> {% csrf_token %}
+                <p class="inp"> {{ form.as_p }} </p>
+    
+    
+    
+        </div>
+        <br>
+        <div class="btn"><Button class="signin" type="submit">Sign In</Button></div>
+        <div class="Sign-Up"><p class="signup_text">Don't have an account?</p> <a href="{% url 'register' %}">Sign-Up</a></div>
+        {% csrf_token %}
+        </form>
+    
+        <div class="copyright"> <br> <br>
+            <p>Copyright © <a href="https://techis.io/">Tech I.S. </a> 2023</p>
+        </div>
+    </section>
+    
+</body>
+</html>

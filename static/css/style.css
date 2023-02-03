@@ -1,0 +1,99 @@
+/*  */
+/*  */
+/* Login Page */
+/*  */
+/*  */
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.signin {
+    text-align: center;
+}
+a{
+    /* text-decoration: none; */
+    color: white;
+}
+/* label[for=id_username]>br, */
+.signin label {
+    display: none;
+}
+p.hd {
+    font-size: 30px;
+    font-family: cursive;
+}
+p.hd span {
+    font-size: 20px;
+}
+
+/* Register */
+/*  */
+
+.register_page {
+    text-align: center;
+    /* position: relative;
+    left: 40%; */
+    /* display: flex; */
+}
+/* .register_page h1{
+    text-align: center;
+} */
+.register_page p{
+    content: "\a";
+    white-space: pre;
+    margin: 0;
+}
+/* span.helptext::after {
+    content: "\a";
+        white-space: pre;
+} */
+.register_page ::marker {
+    color: white;
+}
+
+.register_page {
+    background-color: white;
+    color: black;
+    display: flex;
+    /* width: 73%; */
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    left: 20%;
+}
+.register_page form{
+    font-size: 1vw;
+}
+.register_page a{
+    color: black;
+}
+.buttons {
+    margin: 2vw;
+}
+.register_page button.submit{
+    margin: 2vw;
+}
+ /* Main page  */
+
+ .content {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+ }
+ /* .main_content {
+    text-align: center;
+ } */
+ .logout a {
+     text-decoration: none;
+     color: rgba(0, 0, 0, .55);
+     margin-top: 4px;
+     padding-top: 2vw;
+ }
+ .logout{
+    margin-top: 0.5vw;
+ }
+ span.font-primary {
+    font-family: cursive;
+    font-weight: bold;
+ }
