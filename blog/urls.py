@@ -9,6 +9,7 @@ urlpatterns = [
     # path('login', views.login_view, name='login '),
     # path('accounts/login/', views.login,  name='login'),
     path('login', views.login, name='login '),
+    path('blog/<int:post_id>/', views.blog, name='blog'),
    
 
 ]
