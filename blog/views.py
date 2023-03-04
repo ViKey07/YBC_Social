@@ -10,7 +10,7 @@ from .forms import PostForm
 @login_required
 def post_list(request):
     posts = Post.objects.all().order_by('-created_at')
-    return render(request, 'post_list.html', {'posts': posts})
+    return render(request, 'blog-main-page.html', {'posts': posts})
 
 
 def register(request):
@@ -52,3 +52,4 @@ def blog(request, post_id):
         else:
             return HttpResponseRedirect(form.errors.as_json())
     return render(request, "blog-view.html", {'post': post})
+
