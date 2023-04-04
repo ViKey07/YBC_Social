@@ -1,0 +1,208 @@
+
+
+
+.login-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em;
+    background-color: blue;
+}
+
+
+.nav-logo {
+    width: 20%;
+    display: flex;
+}
+
+.signin-btn {
+    padding: 0.4em 1.7em;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    margin-right: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.signin-btn:hover {
+    background-color: #b0f7ff;
+    border: 2px solid #b0f7ff;
+    color: blue;
+}
+
+
+.logout-btn {
+    padding: 0.4em 1.7em;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    margin-right: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.logout-btn:hover {
+    background-color: #b0f7ff;
+    border: 2px solid #b0f7ff;
+    color: blue;
+}
+
+.logout-btn-link {
+    text-decoration: none;
+    color: white;
+}
+
+.logout-btn-link:hover{
+    color: blue;
+}
+
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .nav-logo {
+        width: 40%;
+    }
+    .signin-btn,
+    .logout-btn {
+        /* padding: 0.8em 1.5em;
+        margin-right: 0.5em; */
+        display: none;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .nav-logo {
+        width: 30%;
+    }
+} 
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+    .nav-logo {
+        width: 20%;
+    }
+} 
+  
+
+.signin-sec {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.lock {
+    width: 40%;
+}
+
+ul.errorlist, li {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+p.signup_text {
+    margin: -4% 0 4% 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.sec2 {
+    width: 40%;
+}
+
+p.hd {
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    color: blue;
+}
+
+input {
+    padding: 1em;
+    border-radius: 50px;
+    border: 0.2em solid blue;
+    background: transparent;
+    width: 70%;
+}
+
+input:focus{
+    padding: 1em;
+    border-radius: 50px;
+    border: 0.2em solid blue;
+    background: transparent;
+    width: 70%;
+}
+
+
+.signin-sec-btn {
+    padding: 0.4em 1.7em;
+    border-radius: 50px;
+    border: 2px solid blue;
+    background-color: #b0f7ff;
+    color: blue;
+    cursor: pointer;
+    margin-right: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.signin-sec-btn:hover {
+    padding: 0.4em 1.7em;
+    border-radius: 50px;
+    border: 2px solid #b0f7ff;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    margin-right: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.signup-sec-btn {
+    padding: 0.4em 1.7em;
+    border-radius: 50px;
+    border: 2px solid blue;
+    background-color: #b0f7ff;
+    color: blue;
+    cursor: pointer;
+    margin-right: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.signup-sec-btn:hover {
+    padding: 0.4em 1.7em;
+    border-radius: 50px;
+    border: 2px solid #b0f7ff;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    margin-right: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.signup-sec-btn-link {
+    text-decoration: none;
+    color: blue;
+}
+
+.signup-sec-btn-link:hover {
+    text-decoration: none;
+    color: white;
+}
