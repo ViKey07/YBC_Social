@@ -55,6 +55,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1', 'https://f0735e4b-6fec-4dfc-b986-cab850d3ba26.id.repl.co', 'https://ybcsocial.vikkkey7.repl.co']
+
 ROOT_URLCONF = 'Hushed_voices_main.urls'
 
 TEMPLATES = [
