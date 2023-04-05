@@ -10,7 +10,7 @@
     <title>YBC LOGIN</title>
 </head>
 <body>
-    <nav class="login-nav">
+    <!-- <nav class="login-nav">
 
         <a class="nav-logo-a" href="#"><img class="nav-logo" src="{% static 'img/Asset 212.png'%}" alt="YBC-logo"></a>
 
@@ -22,7 +22,34 @@
                 </div>
             </form>   
         </div>
-    </nav>
+    </nav> -->
+
+
+    <nav class="login-nav">
+        <a class="nav-logo-a" href="#">
+          <img class="nav-logo" src="{% static 'img/Asset 212.png'%}" alt="YBC-logo">
+        </a>
+      
+        <div class="c-nav" id="t-nav">
+          <form class="nav-form" method="post"> {% csrf_token %}
+            <div class="btn">
+              <button class="hamburger-btn" type="button">
+                <span ></span>
+                <span ></span>
+                <span ></span>
+              </button>
+            </div>
+          </form>   
+        </div>
+      
+        <!-- Dropdown container -->
+        <div class="dropdown" id="dropdown">
+          <button class="signin-btn" type="submit">LOGIN</button>
+          <button class="logout-btn"><a class="logout-btn-link" href="{% url 'register' %}">JOIN NOW</a></button>
+        </div>
+      
+      </nav>
+      
     
     <section class="signin-sec">
         
@@ -50,6 +77,21 @@
         </div>
     
     </section>
+
+    <script>
+
+        // Get the hamburger button and the dropdown container
+        const hamburgerBtn = document.querySelector('.hamburger-btn');
+        const dropdown = document.querySelector('.dropdown');
+
+        // Add a click event listener to the hamburger button
+        hamburgerBtn.addEventListener('click', () => {
+        // Toggle the active class on the dropdown container
+        dropdown.classList.toggle('dropdown-active');
+        });
+
+
+    </script>
     
 </body>
 </html>
