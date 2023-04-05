@@ -107,6 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+     'OPTIONS': {
+         'passwords': '/path/to/common-passwords.txt.gz',
+     },
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
