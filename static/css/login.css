@@ -362,3 +362,22 @@ input:focus {
         width: 80%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .nav-logo {
+        width: 40%;
+    }
+    .signin-btn,
+    .logout-btn {
+        display: none;
+    }
+    .signin-sec {
+        flex-direction: column;
+    }
+    .lock {
+        width: 60%;
+    }
+    div.sec2 {
+        width: 80%;
+    }
+}
